@@ -29,13 +29,18 @@ exports.handler = async function (context, event, callback) {
     Authorization: `Bearer ${context.VAPI_API_KEY}`,
   };
 
-  const response = await axios.post(`https://api.vapi.ai/call`, data, {
-    headers: headers,
-  });
+  try {
+    const response = await axios.post(`https://api.vapi.ai/call`, data, {
+      headers: headers,
+    });
 
-  callback(null, response.data["phoneCallProviderDetails"]["twiml"]);
+    let origTwiML = response.data["phoneCallProviderDetails"]["twiml"];
 
-  // const twiml = new Twilio.twiml.VoiceResponse();
-  // twiml.say("Hello World!");
-  // callback(null, twiml);
+    // const res = new Twilio.Response();
+    // res.setStatusCode(201).setBody(newTwiML);
+
+    return callback(null, origTwiML);
+  } catch (error) {
+    callback(error);
+  }
 };

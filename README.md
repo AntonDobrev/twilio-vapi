@@ -1,6 +1,4 @@
-# twilio-vapi
-
-## Blog Post
+# Build an AI Assistant with Twilio and VAPI
 
 For a detailed guide on how to integrate Twilio with VAPI AI Assistant and transfer calls between them, check out our blog post [insert link here](https://...). This blog post covers step-by-step instructions on sending calls from Twilio to VAPI AI Assistant and transferring calls back to Twilio for human agents.
 
