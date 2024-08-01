@@ -1,6 +1,12 @@
 # Build an AI Assistant with Twilio and VAPI
 
-For a detailed guide on how to integrate Twilio with VAPI AI Assistant and transfer calls between them, check out our blog post [insert link here](https://...). This blog post covers step-by-step instructions on sending calls from Twilio to VAPI AI Assistant and transferring calls back to Twilio for human agents.
+## Disclaimer
+
+This software is to be considered "sample code", a Type B Deliverable, and is delivered "as-is" to the user. Twilio bears no responsibility to support the use or implementation of this software.
+
+## Overview
+
+For a detailed guide on how to integrate Twilio with VAPI AI Assistant and transfer calls between them, check out our blog post - Coming Soon!. This blog post covers step-by-step instructions on sending calls from Twilio to VAPI AI Assistant and transferring calls back to Twilio for human agents.
 
 Happy integrating!
 
@@ -75,4 +81,3 @@ twilio serverless:deploy
 This command will deploy the serverless function to your Twilio account.
 
 6. Once the deployment is successful, you will receive a URL for your serverless function. You can use this URL to access and test your function.
-
