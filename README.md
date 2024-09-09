@@ -1,5 +1,7 @@
 # Build an AI Assistant with Twilio and VAPI
 
+# 🚧️ UNDER CONSTRUCTION 🚧️
+
 ## Disclaimer
 
 This software is to be considered "sample code", a Type B Deliverable, and is delivered "as-is" to the user. Twilio bears no responsibility to support the use or implementation of this software.
@@ -21,9 +23,9 @@ Before getting started with this repository, make sure you have the following:
 
 This repository contains two serverless functions:
 
-1. **engage-vapi-assistant**: This function is used to engage the VAPI AI assistant. It handles interactions with the assistant and provides responses based on user input.
+1. **create-call**: This function is used to engage the VAPI AI assistant. The assistant handles interactions with the assistant and provides responses based on user input. The function calls the [Create Call API](https://docs.vapi.ai/api-reference/calls/create-call)
 
-2. **transfer-to-human-agent**: This function is used to transfer a call to a human agent. It handles the logic for transferring the call and ensuring a smooth transition from the AI assistant to a human agent.
+2. **transfer-call**: This function is used to transfer a call to a human agent. It handles the logic for transferring the call and ensuring a smooth transition from the AI assistant to a human agent.
 
 To use these functions, follow the deployment steps mentioned below.
 
@@ -34,7 +36,7 @@ To deploy the serverless function in this repository, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/djayanna/twilio-vapi.git
+git clone https://github.com/twilio-professional-services/twilio-vapi.git
 ```
 
 2. Navigate to the project directory:
